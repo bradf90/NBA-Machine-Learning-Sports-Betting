@@ -8,7 +8,18 @@ from src.Predict import NN_Runner, XGBoost_Runner
 from src.Utils.Dictionaries import team_index_current
 from src.Utils.tools import create_todays_games_from_odds, get_json_data, to_data_frame, get_todays_games_json, create_todays_games
 from src.DataProviders.SbrOddsProvider import SbrOddsProvider
-
+tensorflow==2.11.0
+requests==2.28.2
+tqdm==4.64.1
+colorama==0.4.6
+pandas==1.5.3
+numpy==1.24.2
+scikit-learn==1.2.1
+keras==2.11.0
+xgboost==1.7.4
+sbrscrape==0.0.6
+Flask==2.2.3
+openpyxl==3.1.1
 
 todays_games_url = 'https://data.nba.com/data/10s/v2015/json/mobile_teams/nba/2022/scores/00_todays_scores.json'
 data_url = 'https://stats.nba.com/stats/leaguedashteamstats?' \
